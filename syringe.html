@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>syringe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Microsoft JhengHei', 'sans-serif';
+
+    }
+
+    .body {
+      width: 560px;
+      height: 130px;
+      background: linear-gradient(rgb(224, 224, 224, 0.1) 20%, rgb(153, 153, 153, 0.3) 60%, rgb(224, 224, 224, 0.1) 90%), white;
+      border: 1px solid rgb(161, 161, 161);
+      position: relative;
+      margin: auto;
+      top: 300px;
+    }
+
+    .body::before {
+      content: 'Made in Taiwan';
+      color: rgb(160, 160, 160);
+      font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .body::after {
+      content: '';
+      width: 45px;
+      height: 130px;
+      background: #000;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .yellow {
+      width: 280px;
+      height: 130px;
+      background: linear-gradient(rgb(224, 224, 224, 0.1) 20%, rgb(153, 153, 153, 0.3) 60%, rgb(224, 224, 224, 0.1) 90%), #ffa;
+      position: relative;
+      left: 50%;
+    }
+
+    .yellow td {
+      border-right: 1px solid rgb(184, 184, 184);
+      position: relative;
+      top: -2px;
+      left: -260px;
+    }
+
+    .yellow td~td {
+      padding: 8px;
+    }
+
+    .middleLeft {
+      width: 65px;
+      height: 90px;
+      background: linear-gradient(rgb(224, 224, 224, 0.1) 20%, rgb(153, 153, 153, 0.3) 60%, rgb(224, 224, 224, 0.1) 90%), white;
+      border: 1px solid rgb(161, 161, 161);
+      position: relative;
+      top: -50%;
+      left: 0;
+      transform: translate(-100%, -50%);
+    }
+
+    .middleLeft::before {
+      content: '';
+      width: 60px;
+      height: 140px;
+      background: linear-gradient(rgb(224, 224, 224, 0.2) 20%, rgb(153, 153, 153, 0.4) 60%, rgb(224, 224, 224, 0.2) 90%), white;
+      border: 1px solid rgb(161, 161, 161);
+      border-radius: 15% 15% 15% 15%/10% 15% 15% 10%;
+      position: absolute;
+      top: -25px;
+      left: -96%;
+      transform: translate(0, 0);
+    }
+
+    .middleRight {
+      width: 45px;
+      height: 65px;
+      background: linear-gradient(rgb(224, 224, 224, 0.2) 20%, rgb(153, 153, 153, 0.4) 60%, rgb(224, 224, 224, 0.2) 90%), white;
+      border: 1px solid rgb(161, 161, 161);
+      border-radius: 0% 15% 15% 0%/0% 15% 15% 0%;
+      position: relative;
+      top: 50%;
+      left: 626px;
+      transform: translate(0, -50%);
+    }
+
+    .middleRight::after {
+      content: '';
+      width: 113px;
+      border-top: 2px solid gray;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(0, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="yellow">
+      <table>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="middleLeft">
+      <div class="middleRight"></div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
