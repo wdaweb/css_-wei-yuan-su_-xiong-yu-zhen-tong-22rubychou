@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bear</title>
+  <style>
+    .body {
+      width: 300px;
+      height: 300px;
+      background: black;
+      border-radius: 50%;
+      position: relative;
+      margin: 200px auto;
+    }
+
+    .noseAndMouth {
+      width: 130px;
+      height: 75px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .noseAndMouth::before {
+      content: '';
+      width: 70px;
+      height: 70px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 150%;
+      transform: translate(-50%, -50%);
+    }
+
+    .noseAndMouth::after {
+      content: '';
+      width: 70px;
+      height: 70px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .nose {
+      width: 25px;
+      height: 15px;
+      border-radius: 50%;
+      background: black;
+      /* border: 1px solid red; */
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .mouth {
+      width: 65px;
+      height: 25px;
+      border-radius: 50%;
+      background: black;
+      /* border: 1px solid red; */
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .mouth::after {
+      content: '';
+      width: 40px;
+      height: 30px;
+      background: white;
+      position: absolute;
+      top: 300%;
+      left: 50%;
+      transform: translate(-100%, 0) skewX(45deg) rotate(90deg);
+    }
+
+    .mouth::before {
+      content: '';
+      width: 40px;
+      height: 30px;
+      background: white;
+      position: absolute;
+      top: 300%;
+      left: 50%;
+      transform: translate(0, 0) skewX(-45deg) rotate(90deg);
+    }
+
+    .rightEye {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 23%;
+      left: 30%;
+      transform: translate(-50%, 0);
+    }
+
+    .rightEyeBall {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: black;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .rightEye::before {
+      content: '';
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: black;
+      position: absolute;
+      top: -90%;
+      left: -30%;
+      transform: translate(-50%, -50%);
+    }
+
+    .rightEye::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: -90%;
+      left: -30%;
+      transform: translate(-50%, -50%);
+    }
+
+    .leftEye {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 23%;
+      left: 70%;
+      transform: translate(-50%, 0);
+    }
+
+    .leftEyeBall {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: black;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .leftEye::before {
+      content: '';
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: black;
+      position: absolute;
+      top: -90%;
+      left: 130%;
+      transform: translate(-50%, -50%);
+    }
+
+    .leftEye::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: -90%;
+      left: 130%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="rightEye">
+      <div class="rightEyeBall"></div>
+    </div>
+    <div class="leftEye">
+      <div class="leftEyeBall"></div>
+    </div>
+    <div class="cheek"></div>
+    <div class="noseAndMouth">
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+  </div>
+</body>
+
+</html>
